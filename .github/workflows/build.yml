@@ -20,12 +20,12 @@ jobs:
           java-version: '21'
           cache: maven
 
-      - name: Build plugin
-        run: mvn --batch-mode clean package
+            - name: Build plugin
+        run: mvn --batch-mode -f PvPPractice-Project/PvPPractice/pom.xml clean package
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: PvPPractice-JAR
-          path: target/*.jar
+          path: PvPPractice-Project/PvPPractice/target/*.jar
           if-no-files-found: error
