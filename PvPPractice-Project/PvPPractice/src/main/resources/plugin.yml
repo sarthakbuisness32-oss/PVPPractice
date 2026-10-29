@@ -1,0 +1,19 @@
+name: PvPPractice
+version: 1.0.0
+main: com.example.pvppractice.PvPPracticePlugin
+api-version: '1.21'
+author: OpenAI
+description: Training bots, difficulty settings, and an admin practice menu for Paper 1.21.11.
+softdepend: [AuthMe]
+commands:
+  pvppractice:
+    description: Main PvPPractice command
+    usage: /pvppractice <menu|bot|clear|difficulty>
+    aliases: [pvppr, practice]
+permissions:
+  pvppractice.admin:
+    description: Allows managing PvPPractice training bots and settings
+    default: op
+  pvppractice.use:
+    description: Allows opening the practice menu and spawning practice bots
+    default: true

@@ -1,0 +1,12 @@
+# PvPPractice settings
+# AuthMe integration is fail-closed: if AuthMe is installed but its API cannot be queried,
+# players are denied access until authentication can be verified.
+authme:
+  require-authentication: true
+
+bots:
+  max-per-player: 3
+  remove-on-death: true
+  remove-on-owner-quit: true
+  default-difficulty: NORMAL
+  name-format: '&cTraining Bot &8| &f{difficulty}'
