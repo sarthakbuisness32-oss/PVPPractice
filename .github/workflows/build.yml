@@ -20,7 +20,7 @@ jobs:
           java-version: '21'
           cache: maven
 
-            - name: Build plugin
+      - name: Build plugin
         run: mvn --batch-mode -f PvPPractice-Project/PvPPractice/pom.xml clean package
 
       - name: Upload JAR
